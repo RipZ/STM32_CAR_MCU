@@ -79,18 +79,23 @@ void dashboard(void)
 //	unsigned char FLASH_write_buffer[40];
 //	unsigned char FLASH_read_buffer[40];
 
+	SD_CardInfo SDCardInfo;
+	SD_Error Status = SD_OK;
+	
+  FRESULT fsresult;               //return code for file related operations
+  FATFS myfs;                     //FAT file system structure, see ff.h for details
+  FIL myfile;                     //file object
+
 	unsigned char GPS_speed;
 	unsigned char GPS_speed_knots[8];
 	float GPS_speed_kmph;
 	
+	unsigned char debug_tmp[512];
+	
 	unsigned char nmea_offset, tmp;
 	
-		FATFS fs;            		// Work area (file system object) for logical drive
     FIL fsrc, fdst;      		// file objects
-
-    FRESULT res;         		// FatFs function common result code
     UINT br, bw;         		// File R/W count
-    FILINFO finfo;
     DIR dirs;
 //		char path[50]={""};
 	
@@ -248,8 +253,77 @@ void dashboard(void)
 				GPS_NMEA_offset = 0;
 			}
 // car ECU requesting parameters
-			ECU_Request_param(); // request parameter from car ECU
+//			ECU_Request_param(); // request parameter from car ECU
 	// sdcard fat test
+  sprintf(debug_tmp, "\n");
+  /*-------------------------- SD Init ----------------------------- */
+  Status = SD_Init();
+
+  if (Status == SD_OK)
+  {
+    sprintf(debug_tmp, "SD Card initialized ok.\n");
+   /*----------------- Read CSD/CID MSD registers ------------------*/
+    Status = SD_GetCardInfo(&SDCardInfo);
+  }
+  else
+  {
+    sprintf(debug_tmp, "SD Card did not initialize, check that a card is inserted. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    while(1);  //infinite loop
+  }
+
+  if (Status == SD_OK)
+  {
+    sprintf(debug_tmp, "SD Card information retrieved ok.\n");
+    /*----------------- Select Card --------------------------------*/
+    Status = SD_SelectDeselect((uint32_t) (SDCardInfo.RCA << 16));
+  }
+  else
+  {
+    sprintf(debug_tmp, "Could not get SD Card information. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    while(1);  //infinite loop
+  }
+
+  if (Status == SD_OK)
+  {
+    sprintf(debug_tmp, "SD Card selected ok.\n");
+   /*----------------- Enable Wide Bus Operation --------------------------------*/
+    Status = SD_EnableWideBusOperation(SDIO_BusWide_4b);
+  }
+  else
+  {
+    sprintf(debug_tmp, "SD Card selection failed. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    while(1);  //infinite loop
+  }
+
+  if (Status == SD_OK)
+     sprintf(debug_tmp, "SD Card 4-bit Wide Bus operation successfully enabled.\n");
+  else
+  {
+    sprintf(debug_tmp, "Could not enable SD Card 4-bit Wide Bus operation, will revert to 1-bit operation.\nSD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+  }
+
+/*-----------------------------------------------------------------------------
+Beginning of FAT file system related code.  The following code shows steps 
+necessary to create, read, and write files.  
+See http://elm-chan.org/fsw/ff/00index_e.html for more information.
+This code assumes a single logical drive, drive number 0.  It also assumes a single partition.
+-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+Mount the file system on logical drive 0.  Mounting associates the file system 
+structure with a logical drive number.  Mounting must be done before any file 
+operations.  Mounting does not write anything to the SD card, it simply 
+initializes and associates the file structure.  The file system structure 
+members are not filled in until the first file operation after f_mount.
+-----------------------------------------------------------------------------*/
+  fsresult = f_mount(0, &myfs);   
+  if (fsresult == FR_OK)
+     sprintf(debug_tmp, "FAT file system mounted ok.\n");
+  else
+    sprintf(debug_tmp, "FAT file system mounting failed. FRESULT Error code: %d.  See FATfs/ff.h for FRESULT code meaning.\n", fsresult);
+
+	while(1);
+	
 /*
 			SD_Nvic_conf();
 			SD_Config();

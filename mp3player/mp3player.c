@@ -8,8 +8,6 @@
 
 extern void PutString(u8 *s);
 
-SD_CardInfo SDCardInfo;
-SD_Error Status = SD_OK;
 BYTE buffer[1024]; // file copy buffer
 volatile unsigned int count = 0;
 uint16_t poprawka = 0;
@@ -324,6 +322,10 @@ void SD_Nvic_conf(){
 
 void SD_Config(void){
 	char tmp[16];
+	
+	SD_CardInfo SDCardInfo;
+	SD_Error Status = SD_OK;
+
 	  Status = SD_Init();
 
 	  if (Status == SD_OK)

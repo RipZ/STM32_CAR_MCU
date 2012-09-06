@@ -382,8 +382,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>174</TopLine>
-      <CurrentLine>179</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Startup\stm32f10x_startup.s</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_startup.s</FilenameWithoutPath>
@@ -420,10 +420,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>50</TopLine>
-      <CurrentLine>55</CurrentLine>
+      <TopLine>123</TopLine>
+      <CurrentLine>145</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -455,8 +455,8 @@
       <Focus>0</Focus>
       <ColumnNumber>2</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>595</TopLine>
-      <CurrentLine>615</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -495,8 +495,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>111</TopLine>
-      <CurrentLine>132</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\bsp.c</PathWithFileName>
       <FilenameWithoutPath>bsp.c</FilenameWithoutPath>
@@ -535,8 +535,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>96</TopLine>
-      <CurrentLine>102</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\SRC\misc.c</PathWithFileName>
       <FilenameWithoutPath>misc.c</FilenameWithoutPath>
@@ -722,8 +722,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>365</TopLine>
-      <CurrentLine>373</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\SRC\stm32f10x_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_gpio.c</FilenameWithoutPath>
@@ -806,8 +806,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>162</TopLine>
-      <CurrentLine>172</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\SRC\stm32f10x_sdio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_sdio.c</FilenameWithoutPath>
@@ -848,8 +848,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>564</TopLine>
-      <CurrentLine>569</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\SRC\stm32f10x_usart.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_usart.c</FilenameWithoutPath>
@@ -1154,8 +1154,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>102</TopLine>
-      <CurrentLine>109</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\usart\SPI_Flash.c</PathWithFileName>
       <FilenameWithoutPath>SPI_Flash.c</FilenameWithoutPath>
@@ -1168,8 +1168,8 @@
       <Focus>0</Focus>
       <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>22</TopLine>
-      <CurrentLine>23</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\usart\Com.c</PathWithFileName>
       <FilenameWithoutPath>Com.c</FilenameWithoutPath>
@@ -1399,8 +1399,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>107</TopLine>
-      <CurrentLine>113</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FMradio\fm.c</PathWithFileName>
       <FilenameWithoutPath>fm.c</FilenameWithoutPath>
@@ -1448,8 +1448,8 @@
       <Focus>0</Focus>
       <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>190</TopLine>
-      <CurrentLine>191</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\mp3player\mp3player.c</PathWithFileName>
       <FilenameWithoutPath>mp3player.c</FilenameWithoutPath>
@@ -1470,48 +1470,6 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>65</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>19</TopLine>
-      <CurrentLine>28</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\diskio.c</PathWithFileName>
-      <FilenameWithoutPath>diskio.c</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>66</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>2187</TopLine>
-      <CurrentLine>2198</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\ff.c</PathWithFileName>
-      <FilenameWithoutPath>ff.c</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>67</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>155</TopLine>
-      <CurrentLine>156</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\sdcard.c</PathWithFileName>
-      <FilenameWithoutPath>sdcard.c</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
       <FileNumber>68</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1523,62 +1481,6 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\mp3player\vs1003.c</PathWithFileName>
       <FilenameWithoutPath>vs1003.c</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>69</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\diskio.h</PathWithFileName>
-      <FilenameWithoutPath>diskio.h</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>70</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\ff.h</PathWithFileName>
-      <FilenameWithoutPath>ff.h</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>71</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\integer.h</PathWithFileName>
-      <FilenameWithoutPath>integer.h</FilenameWithoutPath>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>72</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\mp3player\sdcard.h</PathWithFileName>
-      <FilenameWithoutPath>sdcard.h</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
@@ -1598,7 +1500,7 @@
 
   <Group>
     <GroupName>dashboard</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -1609,8 +1511,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\dashboard\dashboard.h</PathWithFileName>
       <FilenameWithoutPath>dashboard.h</FilenameWithoutPath>
@@ -1623,11 +1525,123 @@
       <Focus>0</Focus>
       <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>247</TopLine>
-      <CurrentLine>251</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\dashboard\dashboard.c</PathWithFileName>
       <FilenameWithoutPath>dashboard.c</FilenameWithoutPath>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>FatFS</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\diskio.c</PathWithFileName>
+      <FilenameWithoutPath>diskio.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\ff.c</PathWithFileName>
+      <FilenameWithoutPath>ff.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\sdcard.c</PathWithFileName>
+      <FilenameWithoutPath>sdcard.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\timestamp.c</PathWithFileName>
+      <FilenameWithoutPath>timestamp.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\timestamp.h</PathWithFileName>
+      <FilenameWithoutPath>timestamp.h</FilenameWithoutPath>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>RTC</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\rtc.h</PathWithFileName>
+      <FilenameWithoutPath>rtc.h</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FatFs\rtc.c</PathWithFileName>
+      <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
     </File>
   </Group>
 

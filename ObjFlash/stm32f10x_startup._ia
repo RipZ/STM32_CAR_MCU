@@ -1,1 +1,0 @@
---cpu Cortex-M3 --pd "__RTX SETA 1" -g --apcs=interwork -I e:\Keil\ARM\RV31\Inc -I e:\Keil\ARM\CMSIS\Include -I e:\Keil\ARM\Inc\?ST\STM32F10x -o "..\ObjFlash\stm32f10x_startup.o" --depend "..\ObjFlash\stm32f10x_startup.d" "..\Startup\stm32f10x_startup.s"

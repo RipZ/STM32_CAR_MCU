@@ -779,44 +779,9 @@
               <FilePath>..\mp3player\mp3player.h</FilePath>
             </File>
             <File>
-              <FileName>diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\diskio.c</FilePath>
-            </File>
-            <File>
-              <FileName>ff.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\ff.c</FilePath>
-            </File>
-            <File>
-              <FileName>sdcard.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\sdcard.c</FilePath>
-            </File>
-            <File>
               <FileName>vs1003.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\mp3player\vs1003.c</FilePath>
-            </File>
-            <File>
-              <FileName>diskio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\diskio.h</FilePath>
-            </File>
-            <File>
-              <FileName>ff.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\ff.h</FilePath>
-            </File>
-            <File>
-              <FileName>integer.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\integer.h</FilePath>
-            </File>
-            <File>
-              <FileName>sdcard.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\sdcard.h</FilePath>
             </File>
             <File>
               <FileName>vs1003.h</FileName>
@@ -837,6 +802,51 @@
               <FileName>dashboard.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\dashboard\dashboard.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FatFS</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\sdcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>timestamp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\timestamp.c</FilePath>
+            </File>
+            <File>
+              <FileName>timestamp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FatFs\timestamp.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTC</GroupName>
+          <Files>
+            <File>
+              <FileName>rtc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FatFs\rtc.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\rtc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1615,44 +1625,9 @@
               <FilePath>..\mp3player\mp3player.h</FilePath>
             </File>
             <File>
-              <FileName>diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\diskio.c</FilePath>
-            </File>
-            <File>
-              <FileName>ff.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\ff.c</FilePath>
-            </File>
-            <File>
-              <FileName>sdcard.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\sdcard.c</FilePath>
-            </File>
-            <File>
               <FileName>vs1003.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\mp3player\vs1003.c</FilePath>
-            </File>
-            <File>
-              <FileName>diskio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\diskio.h</FilePath>
-            </File>
-            <File>
-              <FileName>ff.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\ff.h</FilePath>
-            </File>
-            <File>
-              <FileName>integer.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\integer.h</FilePath>
-            </File>
-            <File>
-              <FileName>sdcard.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\sdcard.h</FilePath>
             </File>
             <File>
               <FileName>vs1003.h</FileName>
@@ -1673,6 +1648,51 @@
               <FileName>dashboard.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\dashboard\dashboard.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FatFS</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\sdcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>timestamp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\timestamp.c</FilePath>
+            </File>
+            <File>
+              <FileName>timestamp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FatFs\timestamp.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTC</GroupName>
+          <Files>
+            <File>
+              <FileName>rtc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FatFs\rtc.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FatFs\rtc.c</FilePath>
             </File>
           </Files>
         </Group>
