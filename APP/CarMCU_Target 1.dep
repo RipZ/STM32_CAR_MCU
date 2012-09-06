@@ -1,0 +1,2 @@
+Dependencies for Project 'CarMCU', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_hd.s)(0x4F586DFC)(--cpu Cortex-M3 -g --apcs=interwork -I C:\RipZ\Keil\ARM\RV31\Inc -I C:\RipZ\Keil\ARM\CMSIS\Include -I C:\RipZ\Keil\ARM\Inc\ST\STM32F10x --list "startup_stm32f10x_hd.lst" --xref -o "startup_stm32f10x_hd.o" --depend "startup_stm32f10x_hd.d")
