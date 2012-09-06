@@ -1,0 +1,1 @@
+--cpu Cortex-M3 --pd "__RTX SETA 1" -g --apcs=interwork -I e:\Keil\ARM\RV31\Inc -I e:\Keil\ARM\CMSIS\Include -I e:\Keil\ARM\Inc\?ST\STM32F10x -o "..\ObjFlash\cortexm3_macro.o" --depend "..\ObjFlash\cortexm3_macro.d" "..\Startup\cortexm3_macro.s"

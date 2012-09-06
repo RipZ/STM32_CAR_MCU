@@ -7,7 +7,7 @@
 ..\ObjFlash\stm32f10x_adc.o: ..\APP\stm32f10x.h
 ..\ObjFlash\stm32f10x_adc.o: ..\APP\stm32f10x_conf.h
 ..\ObjFlash\stm32f10x_adc.o: ..\APP\core_cm3.h
-..\ObjFlash\stm32f10x_adc.o: C:\RipZ\Keil\ARM\RV31\Inc\stdint.h
+..\ObjFlash\stm32f10x_adc.o: e:\Keil\ARM\RV31\Inc\stdint.h
 ..\ObjFlash\stm32f10x_adc.o: ..\APP\system_stm32f10x.h
 ..\ObjFlash\stm32f10x_adc.o: ..\FWLib\inc\stm32f10x_can.h
 ..\ObjFlash\stm32f10x_adc.o: ..\APP\stm32f10x.h

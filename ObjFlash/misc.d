@@ -6,7 +6,7 @@
 ..\ObjFlash\misc.o: ..\APP\stm32f10x.h
 ..\ObjFlash\misc.o: ..\APP\stm32f10x_conf.h
 ..\ObjFlash\misc.o: ..\APP\core_cm3.h
-..\ObjFlash\misc.o: C:\RipZ\Keil\ARM\RV31\Inc\stdint.h
+..\ObjFlash\misc.o: e:\Keil\ARM\RV31\Inc\stdint.h
 ..\ObjFlash\misc.o: ..\APP\system_stm32f10x.h
 ..\ObjFlash\misc.o: ..\FWLib\inc\stm32f10x_conf.h
 ..\ObjFlash\misc.o: ..\FWLib\inc\stm32f10x_bkp.h

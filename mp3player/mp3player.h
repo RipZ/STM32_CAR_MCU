@@ -10,9 +10,11 @@
 
 #include "vs1003.h"
 //#include "stm32f10x_it.h"
-#include "sdcard.h"
-#include "ff.h"
-#include "diskio.h"
+#include "..\FatFs\sdcard.h"
+#include "..\FatFs\ff.h"
+#include "..\FatFs\diskio.h"
+#include "..\FatFs\timestamp.h"
+
 /*
 //defnicje portu diod LED
 #define LED1_PORT			GPIOB

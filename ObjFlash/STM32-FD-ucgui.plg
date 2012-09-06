@@ -3,2139 +3,16 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\RipZ\Projects\Car MCU\APP\STM32-FD-ucgui.uvproj
+E:\RipZ\Projects\GitHub\STM32_CAR_MCU\APP\STM32-FD-ucgui.uvproj
 Project File Date:  06/30/2012
 
 <h2>Output:</h2>
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling bsp.c...
-..\BSP\bsp.c(98): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
-..\BSP\bsp.c(278): warning:  #223-D: function "USART1_InitConfig" declared implicitly
-..\BSP\bsp.c(279): warning:  #223-D: function "USART2_InitConfig" declared implicitly
-..\BSP\bsp.c(280): warning:  #223-D: function "USART3_InitConfig" declared implicitly
-..\BSP\bsp.c(285): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
-compiling dashboard.c...
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(88): warning:  #550-D: variable "res" was set but never used
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(272): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(286): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=52774 RO-data=28786 RW-data=444 ZI-data=20196  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(85): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(287): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43082 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(216): warning:  #188-D: enumerated type mixed with another type
-app.c(232): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-linking...
-Program Size: Code=43082 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 19 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(201): warning:  #192-D: unrecognized character escape sequence
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(85): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(287): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43086 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 30 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(85): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(287): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43086 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(85): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(86): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(287): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43086 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling bsp.c...
-..\BSP\bsp.c(98): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
-..\BSP\bsp.c(278): warning:  #223-D: function "USART1_InitConfig" declared implicitly
-..\BSP\bsp.c(279): warning:  #223-D: function "USART2_InitConfig" declared implicitly
-..\BSP\bsp.c(280): warning:  #223-D: function "USART3_InitConfig" declared implicitly
-..\BSP\bsp.c(285): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
-linking...
-Program Size: Code=43086 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 5 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(62): error:  #65: expected a ";"
-..\dashboard\dashboard.c(65): error:  #20: identifier "tmp" is undefined
-..\dashboard\dashboard.c(62): warning:  #177-D: variable "chat" was declared but never referenced
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-Target not created
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-_____^
-*** error 56: cannot open file
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43050 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling bsp.c...
-..\BSP\bsp.c(98): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
-..\BSP\bsp.c(278): warning:  #223-D: function "USART1_InitConfig" declared implicitly
-..\BSP\bsp.c(279): warning:  #223-D: function "USART2_InitConfig" declared implicitly
-..\BSP\bsp.c(280): warning:  #223-D: function "USART3_InitConfig" declared implicitly
-..\BSP\bsp.c(285): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 5 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43042 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 19 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43130 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 30 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 30 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43050 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43046 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43050 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(285): warning:  #111-D: statement is unreachable
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43066 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 11 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43066 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(273): warning:  #177-D: variable "tmp" was declared but never referenced
-linking...
-Program Size: Code=43086 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(90): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(95): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(96): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(293): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43174 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43066 RO-data=28726 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #223-D: function "PutString" declared implicitly
-app.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(215): warning:  #188-D: enumerated type mixed with another type
-app.c(231): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-linking...
-Program Size: Code=43074 RO-data=28726 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 19 Warning(s).
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(202): warning:  #223-D: function "PutString" declared implicitly
-app.c(214): warning:  #188-D: enumerated type mixed with another type
-app.c(230): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43062 RO-data=28726 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 29 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(202): warning:  #223-D: function "PutString" declared implicitly
-app.c(214): warning:  #188-D: enumerated type mixed with another type
-app.c(230): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43062 RO-data=28722 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 29 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43054 RO-data=28722 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 10 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43354 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 12 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.371V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling app.c...
-app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
-app.c(145): warning:  #223-D: function "dashboard" declared implicitly
-app.c(158): warning:  #188-D: enumerated type mixed with another type
-app.c(161): warning:  #188-D: enumerated type mixed with another type
-app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
-app.c(165): warning:  #188-D: enumerated type mixed with another type
-app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
-app.c(169): warning:  #188-D: enumerated type mixed with another type
-app.c(172): warning:  #188-D: enumerated type mixed with another type
-app.c(175): warning:  #188-D: enumerated type mixed with another type
-app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
-app.c(181): warning:  #188-D: enumerated type mixed with another type
-app.c(186): warning:  #188-D: enumerated type mixed with another type
-app.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-app.c(202): warning:  #223-D: function "PutString" declared implicitly
-app.c(214): warning:  #188-D: enumerated type mixed with another type
-app.c(230): warning:  #188-D: enumerated type mixed with another type
-app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
-app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-linking...
-Program Size: Code=43358 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 19 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
+Clean started: Project: 'STM32-FD-ucgui'
+   deleting intermediate output files for target 'Flash'
+   deleting intermediate output files for target 'RAM'
+Rebuild target 'Flash'
+assembling cortexm3_macro.s...
+assembling stm32f10x_startup.s...
 compiling app.c...
 app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
 app.c(145): warning:  #223-D: function "dashboard" declared implicitly
@@ -2155,133 +32,108 @@ app.c(194): warning:  #177-D: variable "tmp" was declared but never referenced
 app.c(230): warning:  #188-D: enumerated type mixed with another type
 app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
 app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
-linking...
-Program Size: Code=43318 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 18 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
-compiling dashboard.c...
-..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
-..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
-..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
-..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
-..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
-..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
-..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-..\dashboard\dashboard.c(292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
-linking...
-Program Size: Code=43318 RO-data=28654 RW-data=388 ZI-data=18988  
-FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 12 Warning(s).
-Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
-* JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
-Hardware: V8.00
-S/N : 20100214 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F103VE
-VTarget = 3.377V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-Application running ...
-Build target 'Flash'
+compiling stm32f10x_it.c...
+compiling bsp.c...
+..\BSP\bsp.c(98): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
+..\BSP\bsp.c(278): warning:  #223-D: function "USART1_InitConfig" declared implicitly
+..\BSP\bsp.c(279): warning:  #223-D: function "USART2_InitConfig" declared implicitly
+..\BSP\bsp.c(280): warning:  #223-D: function "USART3_InitConfig" declared implicitly
+..\BSP\bsp.c(285): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling cpu_a.asm...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling SPI_Flash.c...
+..\usart\SPI_Flash.c(142): warning:  #940-D: missing return statement at end of non-void function "M25P16_RamTo_buf"
+..\usart\SPI_Flash.c(200): warning:  #940-D: missing return statement at end of non-void function "M25P80_buf_ToRam"
+compiling Com.c...
+compiling GUI_X_uCOS.c...
+compiling ads7843.c...
+compiling calibrate.c...
+compiling GUI_X_Touch.c...
+..\uCOS-IIGUI_X\GUI_X_Touch.c(55): warning:  #223-D: function "TPReadX" declared implicitly
+..\uCOS-IIGUI_X\GUI_X_Touch.c(99): warning:  #223-D: function "TPReadY" declared implicitly
+..\uCOS-IIGUI_X\GUI_X_Touch.c(169): warning:  #223-D: function "TPReadY" declared implicitly
+..\uCOS-IIGUI_X\GUI_X_Touch.c(213): warning:  #223-D: function "TPReadX" declared implicitly
+compiling ili9320_api.c...
+compiling lcd_dis24.c...
+compiling pic.c...
+compiling fsmc_sram.c...
+compiling ili9320_ucgui.c...
+compiling ili9320.c...
+..\TFT\ili9320.c(99): warning:  #223-D: function "M25P80_buf_ToRam_TP" declared implicitly
+..\TFT\ili9320.c(100): warning:  #223-D: function "LCD_Init1" declared implicitly
+..\TFT\ili9320.c(181): warning:  #177-D: variable "temp" was declared but never referenced
+..\TFT\ili9320.c(454): warning:  #1-D: last line of file ends without a newline
+compiling hwhb_32.c...
+compiling STCaiYun_35.c...
+compiling fm.c...
+..\FMradio\fm.c(42): warning:  #174-D: expression has no effect
+..\FMradio\fm.c(42): warning:  #174-D: expression has no effect
+..\FMradio\fm.c(42): warning:  #174-D: expression has no effect
+..\FMradio\fm.c(71): warning:  #940-D: missing return statement at end of non-void function "FMradio"
+..\FMradio\fm.c(35): warning:  #177-D: variable "sb" was declared but never referenced
+..\FMradio\fm.c(35): warning:  #550-D: variable "c" was set but never used
+..\FMradio\fm.c(36): warning:  #550-D: variable "xCenter" was set but never used
+..\FMradio\fm.c(100): warning:  #550-D: variable "ch1" was set but never used
+compiling Tea5756.c...
+compiling mp3player.c...
+..\mp3player\mp3player.c(24): warning:  #177-D: variable "fdst" was declared but never referenced
+..\mp3player\mp3player.c(26): warning:  #550-D: variable "res" was set but never used
+..\mp3player\mp3player.c(27): warning:  #177-D: variable "bw" was declared but never referenced
+..\mp3player\mp3player.c(30): warning:  #177-D: variable "bytes_saved" was declared but never referenced
+..\mp3player\mp3player.c(31): warning:  #177-D: variable "key_pressed" was declared but never referenced
+..\mp3player\mp3player.c(102): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(113): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(121): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(130): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(193): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(196): warning:  #128-D: loop is not reachable from preceding code
+..\mp3player\mp3player.c(333): warning:  #223-D: function "sprintf" declared implicitly
+..\mp3player\mp3player.c(334): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(336): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(429): warning:  #9-D: nested comment is not allowed
+compiling diskio.c...
+compiling ff.c...
+compiling sdcard.c...
+compiling vs1003.c...
+..\mp3player\vs1003.c(88): warning:  #188-D: enumerated type mixed with another type
+..\mp3player\vs1003.c(92): warning:  #188-D: enumerated type mixed with another type
+..\mp3player\vs1003.c(96): warning:  #188-D: enumerated type mixed with another type
 compiling dashboard.c...
 ..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
 ..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
@@ -2298,15 +150,15 @@ compiling dashboard.c...
 linking...
 Program Size: Code=43270 RO-data=28722 RW-data=388 ZI-data=18988  
 FromELF: creating hex file...
-"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 12 Warning(s).
+"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 71 Warning(s).
 Load "..\\ObjFlash\\STM32-FD-ucgui.AXF" 
 * JLink Info: Device "STM32F103VE" selected (512 KB flash, 64 KB RAM).
-Set JLink Project File to "C:\RipZ\Projects\Car MCU\APP\JLinkSettings.ini"
+Set JLink Project File to "E:\RipZ\Projects\GitHub\STM32_CAR_MCU\APP\JLinkSettings.ini"
  
 JLink info:
 ------------
 DLL: V4.40c, compiled Jan 24 2012 09:30:33
-Firmware: J-Link ARM V8 compiled May  3 2012 18:36:22
+Firmware: J-Link ARM V8 compiled Aug  1 2012 13:40:47
 Hardware: V8.00
 S/N : 20100214 
 Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
@@ -2330,7 +182,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F103VE
-VTarget = 3.377V
+VTarget = 3.371V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -2351,3 +203,326 @@ Verify OK.
 * JLink Info: ETM fitted.
 * JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 Application running ...
+Build target 'Flash'
+compiling sdcard.c...
+compiling ff.c...
+..\FatFs\ff.c(77): error:  #5: cannot open source input file "cross_studio_io.h": No such file or directory
+compiling diskio.c...
+..\FatFs\diskio.c(13): error:  #5: cannot open source input file "timestamp.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling ff.c...
+compiling diskio.c...
+..\FatFs\diskio.c(13): error:  #5: cannot open source input file "timestamp.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling diskio.c...
+..\FatFs\rtc.h(63): warning:  #1-D: last line of file ends without a newline
+..\FatFs\timestamp.h(32): warning:  #1-D: last line of file ends without a newline
+..\FatFs\diskio.c(118): error:  #29: expected an expression
+..\FatFs\diskio.c(118): error:  #20: identifier "secNum" is undefined
+..\FatFs\diskio.c(151): error:  #29: expected an expression
+..\FatFs\diskio.c(151): error:  #20: identifier "secNum" is undefined
+compiling timestamp.c...
+..\FatFs\rtc.h(63): warning:  #1-D: last line of file ends without a newline
+..\FatFs\timestamp.h(32): warning:  #1-D: last line of file ends without a newline
+..\FatFs\timestamp.c(105): error:  #29: expected an expression
+..\FatFs\timestamp.c(105): error:  #20: identifier "i" is undefined
+..\FatFs\timestamp.c(146): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(148): error:  #29: expected an expression
+..\FatFs\timestamp.c(148): error:  #20: identifier "i" is undefined
+compiling rtc.c...
+..\FatFs\rtc.h(63): warning:  #1-D: last line of file ends without a newline
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling diskio.c...
+..\FatFs\timestamp.h(32): warning:  #1-D: last line of file ends without a newline
+..\FatFs\diskio.c(118): error:  #29: expected an expression
+..\FatFs\diskio.c(118): error:  #20: identifier "secNum" is undefined
+..\FatFs\diskio.c(151): error:  #29: expected an expression
+..\FatFs\diskio.c(151): error:  #20: identifier "secNum" is undefined
+compiling timestamp.c...
+..\FatFs\timestamp.h(32): warning:  #1-D: last line of file ends without a newline
+..\FatFs\timestamp.c(105): error:  #29: expected an expression
+..\FatFs\timestamp.c(105): error:  #20: identifier "i" is undefined
+..\FatFs\timestamp.c(146): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(148): error:  #29: expected an expression
+..\FatFs\timestamp.c(148): error:  #20: identifier "i" is undefined
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling diskio.c...
+..\FatFs\diskio.c(118): error:  #29: expected an expression
+..\FatFs\diskio.c(118): error:  #20: identifier "secNum" is undefined
+..\FatFs\diskio.c(151): error:  #29: expected an expression
+..\FatFs\diskio.c(151): error:  #20: identifier "secNum" is undefined
+compiling timestamp.c...
+..\FatFs\timestamp.c(105): error:  #29: expected an expression
+..\FatFs\timestamp.c(105): error:  #20: identifier "i" is undefined
+..\FatFs\timestamp.c(146): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(148): error:  #29: expected an expression
+..\FatFs\timestamp.c(148): error:  #20: identifier "i" is undefined
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling diskio.c...
+..\FatFs\diskio.c(118): error:  #29: expected an expression
+..\FatFs\diskio.c(118): error:  #20: identifier "secNum" is undefined
+compiling timestamp.c...
+..\FatFs\timestamp.c(105): error:  #29: expected an expression
+..\FatFs\timestamp.c(105): error:  #20: identifier "i" is undefined
+..\FatFs\timestamp.c(146): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(148): error:  #29: expected an expression
+..\FatFs\timestamp.c(148): error:  #20: identifier "i" is undefined
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling diskio.c...
+compiling timestamp.c...
+..\FatFs\timestamp.c(105): error:  #29: expected an expression
+..\FatFs\timestamp.c(105): error:  #20: identifier "i" is undefined
+..\FatFs\timestamp.c(146): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(148): error:  #29: expected an expression
+..\FatFs\timestamp.c(148): error:  #20: identifier "i" is undefined
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling timestamp.c...
+..\FatFs\timestamp.c(147): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\timestamp.c(149): error:  #29: expected an expression
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling timestamp.c...
+..\FatFs\timestamp.c(149): error:  #29: expected an expression
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling timestamp.c...
+compiling rtc.c...
+..\FatFs\rtc.c(229): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(230): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(231): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(353): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(358): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling rtc.c...
+..\FatFs\rtc.c(232): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(233): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(234): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(212): warning:  #177-D: variable "max_us" was declared but never referenced
+..\FatFs\rtc.c(212): warning:  #177-D: variable "max_seconds" was declared but never referenced
+..\FatFs\rtc.c(212): warning:  #177-D: variable "min_us" was declared but never referenced
+..\FatFs\rtc.c(356): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(361): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling rtc.c...
+..\FatFs\rtc.c(356): error:  #268: declaration may not appear after executable statement in block
+..\FatFs\rtc.c(361): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling rtc.c...
+..\FatFs\rtc.c(361): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Flash'
+compiling rtc.c...
+linking...
+..\ObjFlash\STM32-FD-ucgui.axf: Error: L6200E: Symbol SDCardInfo multiply defined (by diskio.o and mp3player.o).
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.c(24): warning:  #177-D: variable "fdst" was declared but never referenced
+..\mp3player\mp3player.c(26): warning:  #550-D: variable "res" was set but never used
+..\mp3player\mp3player.c(27): warning:  #177-D: variable "bw" was declared but never referenced
+..\mp3player\mp3player.c(30): warning:  #177-D: variable "bytes_saved" was declared but never referenced
+..\mp3player\mp3player.c(31): warning:  #177-D: variable "key_pressed" was declared but never referenced
+..\mp3player\mp3player.c(102): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(113): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(121): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(130): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(193): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(196): warning:  #128-D: loop is not reachable from preceding code
+..\mp3player\mp3player.c(327): error:  #20: identifier "Status" is undefined
+..\mp3player\mp3player.c(332): error:  #20: identifier "SDCardInfo" is undefined
+..\mp3player\mp3player.c(333): warning:  #223-D: function "sprintf" declared implicitly
+..\mp3player\mp3player.c(334): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(336): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(342): error:  #20: identifier "SDCardInfo" is undefined
+..\mp3player\mp3player.c(429): warning:  #9-D: nested comment is not allowed
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.c(24): warning:  #177-D: variable "fdst" was declared but never referenced
+..\mp3player\mp3player.c(26): warning:  #550-D: variable "res" was set but never used
+..\mp3player\mp3player.c(27): warning:  #177-D: variable "bw" was declared but never referenced
+..\mp3player\mp3player.c(30): warning:  #177-D: variable "bytes_saved" was declared but never referenced
+..\mp3player\mp3player.c(31): warning:  #177-D: variable "key_pressed" was declared but never referenced
+..\mp3player\mp3player.c(102): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(113): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(121): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(130): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(193): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(196): warning:  #128-D: loop is not reachable from preceding code
+..\mp3player\mp3player.c(333): warning:  #223-D: function "sprintf" declared implicitly
+..\mp3player\mp3player.c(334): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(336): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(429): warning:  #9-D: nested comment is not allowed
+linking...
+..\ObjFlash\STM32-FD-ucgui.axf: Error: L6200E: Symbol SDCardInfo multiply defined (by diskio.o and mp3player.o).
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.c(24): warning:  #177-D: variable "fdst" was declared but never referenced
+..\mp3player\mp3player.c(26): warning:  #550-D: variable "res" was set but never used
+..\mp3player\mp3player.c(27): warning:  #177-D: variable "bw" was declared but never referenced
+..\mp3player\mp3player.c(30): warning:  #177-D: variable "bytes_saved" was declared but never referenced
+..\mp3player\mp3player.c(31): warning:  #177-D: variable "key_pressed" was declared but never referenced
+..\mp3player\mp3player.c(102): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(113): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(121): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(130): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(193): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(196): warning:  #128-D: loop is not reachable from preceding code
+..\mp3player\mp3player.c(332): error:  #20: identifier "SDCardInfo" is undefined
+..\mp3player\mp3player.c(333): warning:  #223-D: function "sprintf" declared implicitly
+..\mp3player\mp3player.c(334): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(336): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(342): error:  #20: identifier "SDCardInfo" is undefined
+..\mp3player\mp3player.c(429): warning:  #9-D: nested comment is not allowed
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.c(7): error:  #5: cannot open source input file "timestamp.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.h(13): error:  #5: cannot open source input file "sdcard.h": No such file or directory
+compiling dashboard.c...
+..\dashboard\..\mp3player\mp3player.h(13): error:  #5: cannot open source input file "sdcard.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.h(14): error:  #5: cannot open source input file "ff.h": No such file or directory
+compiling dashboard.c...
+..\dashboard\..\mp3player\mp3player.h(15): error:  #5: cannot open source input file "diskio.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.h(15): error:  #5: cannot open source input file "diskio.h": No such file or directory
+compiling dashboard.c...
+..\dashboard\..\mp3player\mp3player.h(15): error:  #5: cannot open source input file "diskio.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.h(16): error:  #5: cannot open source input file "timestamp.h": No such file or directory
+compiling dashboard.c...
+..\dashboard\..\mp3player\mp3player.h(16): error:  #5: cannot open source input file "timestamp.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling mp3player.c...
+..\mp3player\mp3player.c(24): warning:  #177-D: variable "fdst" was declared but never referenced
+..\mp3player\mp3player.c(26): warning:  #550-D: variable "res" was set but never used
+..\mp3player\mp3player.c(27): warning:  #177-D: variable "bw" was declared but never referenced
+..\mp3player\mp3player.c(30): warning:  #177-D: variable "bytes_saved" was declared but never referenced
+..\mp3player\mp3player.c(31): warning:  #177-D: variable "key_pressed" was declared but never referenced
+..\mp3player\mp3player.c(102): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(113): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(121): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(130): warning:  #223-D: function "printf" declared implicitly
+..\mp3player\mp3player.c(193): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(196): warning:  #128-D: loop is not reachable from preceding code
+..\mp3player\mp3player.c(333): warning:  #223-D: function "sprintf" declared implicitly
+..\mp3player\mp3player.c(334): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(336): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\mp3player\mp3player.c(429): warning:  #9-D: nested comment is not allowed
+compiling dashboard.c...
+..\dashboard\dashboard.c(10): warning:  #47-D: incompatible redefinition of macro "true" (declared at line 15 of "e:\Keil\ARM\RV31\Inc\stdbool.h")
+..\dashboard\dashboard.c(11): warning:  #47-D: incompatible redefinition of macro "false" (declared at line 16 of "e:\Keil\ARM\RV31\Inc\stdbool.h")
+..\dashboard\dashboard.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\dashboard\dashboard.c(88): warning:  #177-D: variable "fs" was declared but never referenced
+..\dashboard\dashboard.c(89): warning:  #177-D: variable "fsrc" was declared but never referenced
+..\dashboard\dashboard.c(89): warning:  #177-D: variable "fdst" was declared but never referenced
+..\dashboard\dashboard.c(91): warning:  #177-D: variable "res" was declared but never referenced
+..\dashboard\dashboard.c(92): warning:  #177-D: variable "br" was declared but never referenced
+..\dashboard\dashboard.c(92): warning:  #177-D: variable "bw" was declared but never referenced
+..\dashboard\dashboard.c(93): warning:  #177-D: variable "finfo" was declared but never referenced
+..\dashboard\dashboard.c(94): warning:  #177-D: variable "dirs" was declared but never referenced
+..\dashboard\dashboard.c(288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\dashboard\dashboard.c(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\dashboard\dashboard.c(292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+linking...
+..\ObjFlash\STM32-FD-ucgui.axf: Error: L6200E: Symbol SDCardInfo multiply defined (by diskio.o and mp3player.o).
+Target not created
+Clean started: Project: 'STM32-FD-ucgui'
+   deleting intermediate output files for target 'Flash'
+   deleting intermediate output files for target 'RAM'
+Rebuild target 'Flash'
+assembling cortexm3_macro.s...
+assembling stm32f10x_startup.s...
+compiling app.c...
+app.c(110): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(145): warning:  #223-D: function "dashboard" declared implicitly
+app.c(158): warning:  #188-D: enumerated type mixed with another type
+app.c(161): warning:  #188-D: enumerated type mixed with another type
+app.c(162): warning:  #223-D: function "FM_prev_channel" declared implicitly
+app.c(165): warning:  #188-D: enumerated type mixed with another type
+app.c(166): warning:  #223-D: function "FM_next_channel" declared implicitly
+app.c(169): warning:  #188-D: enumerated type mixed with another type
+app.c(172): warning:  #188-D: enumerated type mixed with another type
+app.c(175): warning:  #188-D: enumerated type mixed with another type
+app.c(178): warning:  #223-D: function "FM_scan" declared implicitly
+app.c(181): warning:  #188-D: enumerated type mixed with another type
+app.c(186): warning:  #188-D: enumerated type mixed with another type
+app.c(214): warning:  #188-D: enumerated type mixed with another type
+app.c(194): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(230): warning:  #188-D: enumerated type mixed with another type
+app.c(5): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(12): warning:  #177-D: function "AppTaskController" was declared but never referenced
+compiling stm32f10x_it.c...
+compiling bsp.c...
+..\BSP\bsp.c(98): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
+..\BSP\bsp.c(278): warning:  #223-D: function "USART1_InitConfig" declared implicitly
+..\BSP\bsp.c(279): warning:  #223-D: function "USART2_InitConfig" declared implicitly
+..\BSP\bsp.c(280): warning:  #223-D: function "USART3_InitConfig" declared implicitly
+..\BSP\bsp.c(285): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
