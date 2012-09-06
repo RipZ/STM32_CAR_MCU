@@ -3,8 +3,6 @@
 #include <string.h>
 #include "stm32f10x.h"
 #include "mp3player.h"
-//#include "keyboard.h"
-//#include "uart.h"
 
 extern void PutString(u8 *s);
 

@@ -85,6 +85,9 @@ void dashboard(void)
   FRESULT fsresult;               //return code for file related operations
   FATFS myfs;                     //FAT file system structure, see ff.h for details
   FIL myfile;                     //file object
+  BYTE fssubtype;
+  uint32_t fre_clust, tot_bytes, fre_bytes;
+  FATFS *myfsptr = &myfs;  //this is necessary because f_getfree expects a pointer to a pointer to a file system object.
 
 	unsigned char GPS_speed;
 	unsigned char GPS_speed_knots[8];
@@ -94,11 +97,15 @@ void dashboard(void)
 	
 	unsigned char nmea_offset, tmp;
 	
-    FIL fsrc, fdst;      		// file objects
-    UINT br, bw;         		// File R/W count
-    DIR dirs;
-//		char path[50]={""};
-	
+  FIL fsrc, fdst;      		// file objects
+  UINT br, bw;         		// File R/W count
+  DIR dirs;
+	FILINFO finfo;
+	struct dirent *ent;
+	char *fn;
+	char *path;
+	int i;
+
 //	unsigned char req_param;
 	
 	parameter[0] = 0x07; parameter_status[0] = 0; parameter_value[0] = 0; // cool
@@ -261,53 +268,56 @@ void dashboard(void)
 
   if (Status == SD_OK)
   {
-    sprintf(debug_tmp, "SD Card initialized ok.\n");
+    sprintf(debug_tmp, "SD Card initialized ok.\n\r");
+		PutString(debug_tmp);
    /*----------------- Read CSD/CID MSD registers ------------------*/
     Status = SD_GetCardInfo(&SDCardInfo);
   }
   else
   {
-    sprintf(debug_tmp, "SD Card did not initialize, check that a card is inserted. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    sprintf(debug_tmp, "SD Card did not initialize, check that a card is inserted. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n\r", Status);
+		PutString(debug_tmp);
     while(1);  //infinite loop
   }
 
   if (Status == SD_OK)
   {
-    sprintf(debug_tmp, "SD Card information retrieved ok.\n");
+    sprintf(debug_tmp, "SD Card information retrieved ok.\n\r");
+		PutString(debug_tmp);
     /*----------------- Select Card --------------------------------*/
     Status = SD_SelectDeselect((uint32_t) (SDCardInfo.RCA << 16));
   }
   else
   {
-    sprintf(debug_tmp, "Could not get SD Card information. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    sprintf(debug_tmp, "Could not get SD Card information. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n\r", Status);
+		PutString(debug_tmp);
     while(1);  //infinite loop
   }
 
   if (Status == SD_OK)
   {
-    sprintf(debug_tmp, "SD Card selected ok.\n");
+    sprintf(debug_tmp, "SD Card selected ok.\n\r");
+		PutString(debug_tmp);
    /*----------------- Enable Wide Bus Operation --------------------------------*/
     Status = SD_EnableWideBusOperation(SDIO_BusWide_4b);
   }
   else
   {
-    sprintf(debug_tmp, "SD Card selection failed. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
+    sprintf(debug_tmp, "SD Card selection failed. SD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n\r", Status);
+		PutString(debug_tmp);
     while(1);  //infinite loop
   }
 
   if (Status == SD_OK)
-     sprintf(debug_tmp, "SD Card 4-bit Wide Bus operation successfully enabled.\n");
+	{
+    sprintf(debug_tmp, "SD Card 4-bit Wide Bus operation successfully enabled.\n\r");
+		PutString(debug_tmp);
+	}
   else
   {
-    sprintf(debug_tmp, "Could not enable SD Card 4-bit Wide Bus operation, will revert to 1-bit operation.\nSD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n", Status);
-  }
-
-/*-----------------------------------------------------------------------------
-Beginning of FAT file system related code.  The following code shows steps 
-necessary to create, read, and write files.  
-See http://elm-chan.org/fsw/ff/00index_e.html for more information.
-This code assumes a single logical drive, drive number 0.  It also assumes a single partition.
------------------------------------------------------------------------------*/
+    sprintf(debug_tmp, "Could not enable SD Card 4-bit Wide Bus operation, will revert to 1-bit operation.\nSD_Error code: %d.  See sdcard.h for SD_Error code meaning.\n\r", Status);
+ 		PutString(debug_tmp);
+}
 
 /*-----------------------------------------------------------------------------
 Mount the file system on logical drive 0.  Mounting associates the file system 
@@ -318,10 +328,80 @@ members are not filled in until the first file operation after f_mount.
 -----------------------------------------------------------------------------*/
   fsresult = f_mount(0, &myfs);   
   if (fsresult == FR_OK)
-     sprintf(debug_tmp, "FAT file system mounted ok.\n");
+	{
+     sprintf(debug_tmp, "FAT file system mounted ok.\n\r");
+		PutString(debug_tmp);
+	}
   else
-    sprintf(debug_tmp, "FAT file system mounting failed. FRESULT Error code: %d.  See FATfs/ff.h for FRESULT code meaning.\n", fsresult);
+	{
+    sprintf(debug_tmp, "FAT file system mounting failed. FRESULT Error code: %d.  See FATfs/ff.h for FRESULT code meaning.\n\r", fsresult);
+		PutString(debug_tmp);
+	}
 
+  switch (myfs.fs_type) 
+  {
+  case 1:
+    fssubtype = 12; 
+    break;
+  case 2:
+    fssubtype = 16;
+    break;
+  case 3:
+    fssubtype = 32;
+  } 
+  sprintf(debug_tmp, "File system type is FAT%d.\n\r", fssubtype);
+	PutString(debug_tmp);
+  sprintf(debug_tmp, "Sector size = %d bytes.  Sectors are physical blocks.\n\r", SS(fs));
+	PutString(debug_tmp);
+  sprintf(debug_tmp, "Cluster size = %d sectors.  Clusters are logical file system blocks.\n\r", myfs.csize); 
+	PutString(debug_tmp);
+  sprintf(debug_tmp, "Card capacity %ld KB.\n\r", SDCardInfo.CardCapacity / 1024); 
+	PutString(debug_tmp);
+  sprintf(debug_tmp, "Card block size %ld bytes.\n\r", SDCardInfo.CardBlockSize);
+	PutString(debug_tmp);
+// Get drive information and free clusters
+  fsresult = f_getfree("/", &fre_clust, &myfsptr);
+  if (fsresult == FR_OK)
+  {
+    // Get total bytes and free bytes
+    tot_bytes = (myfs.max_clust - 2) * myfs.csize * SS(fs);
+    fre_bytes = fre_clust * myfs.csize * SS(fs);
+    // Print free space in unit of KB
+    sprintf(debug_tmp, "%lu KB free space. %lu KB total.\n\r",   fre_bytes / 1024, tot_bytes / 1024);  
+		PutString(debug_tmp);
+  }
+  else
+    sprintf(debug_tmp, "f_getfree failed. FRESULT Error code: %d.  See FATfs/ff.h for FRESULT code meaning.\n\r", fsresult);
+		PutString(debug_tmp);
+
+	fsresult = f_opendir (&dirs, "DASHBE~1");
+	if (fsresult == FR_OK) {
+		/* print all the files and directories within directory */
+		for(;;)
+		{
+			fsresult = f_readdir (&dirs, &finfo);
+			if (fsresult != FR_OK || finfo.fname[0] == 0)
+               break; /* Останов цикла при ошибке или при достижении конца списка директрории */
+				if (finfo.fname[0] == '.')
+               continue; /* Игнорирование элемента 'точка' */
+					fn = finfo.fname;
+			if (finfo.fattrib & AM_DIR) 
+			{   /* Это директория */
+//				sprintf(&path[i], "/%s", fn);
+					sprintf(debug_tmp, "DIR: %s\n\r", fn);
+					PutString(debug_tmp);
+//        fsresult = scan_files(path);
+//        if (fsresult != FR_OK) break;
+//        path[i] = 0;
+      }
+      else
+				{   /* Это файл. */
+					sprintf(debug_tmp, "FILE: %s\n\r", fn);
+					PutString(debug_tmp);
+        }
+     }
+	 }
+	PutString("end of directory listing\n\r");
 	while(1);
 	
 /*
