@@ -76,3 +76,257 @@ linking...
 Program Size: Code=31718 RO-data=4570 RW-data=1836 ZI-data=14756  
 FromELF: creating hex file...
 "..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 28 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(130): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(165): warning:  #223-D: function "dashboard" declared implicitly
+app.c(222): warning:  #223-D: function "sendAndroidControl" declared implicitly
+app.c(222): error:  #20: identifier "PREV_TRACK" is undefined
+app.c(295): warning:  #188-D: enumerated type mixed with another type
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(317): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(322): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(323): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(326): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(327): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(388): warning:  #188-D: enumerated type mixed with another type
+app.c(368): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(6): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(13): warning:  #177-D: function "AppTaskController" was declared but never referenced
+compiling bsp.c...
+..\BSP\bsp.c(53): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
+..\BSP\bsp.c(204): warning:  #223-D: function "USART1_InitConfig" declared implicitly
+..\BSP\bsp.c(205): warning:  #223-D: function "USART2_InitConfig" declared implicitly
+..\BSP\bsp.c(213): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
+compiling Com.c...
+compiling dashboard.c...
+..\dashboard\dashboard.c(59): warning:  #177-D: variable "tmp" was declared but never referenced
+..\dashboard\dashboard.c(69): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\dashboard\dashboard.c(75): warning:  #177-D: variable "str" was declared but never referenced
+..\dashboard\dashboard.c(92): warning:  #177-D: variable "tmp" was declared but never referenced
+compiling i2c.c...
+compiling tda7318.c...
+compiling tea5767.c...
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(130): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(165): warning:  #223-D: function "dashboard" declared implicitly
+app.c(222): warning:  #223-D: function "sendAndroidControl" declared implicitly
+app.c(222): error:  #20: identifier "PREV_TRACK" is undefined
+app.c(295): warning:  #188-D: enumerated type mixed with another type
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(317): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(322): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(323): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(326): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(327): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(388): warning:  #188-D: enumerated type mixed with another type
+app.c(368): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(6): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(13): warning:  #177-D: function "AppTaskController" was declared but never referenced
+compiling bsp.c...
+..\BSP\bsp.c(217): warning:  #223-D: function "FSMC_LCD_Init" declared implicitly
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(130): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(165): warning:  #223-D: function "dashboard" declared implicitly
+app.c(222): warning:  #223-D: function "sendAndroidControl" declared implicitly
+app.c(222): error:  #20: identifier "PREV_TRACK" is undefined
+app.c(295): warning:  #188-D: enumerated type mixed with another type
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(317): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(322): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(323): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(326): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(327): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(388): warning:  #188-D: enumerated type mixed with another type
+app.c(368): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(6): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(13): warning:  #177-D: function "AppTaskController" was declared but never referenced
+compiling bsp.c...
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(2): error:  #5: cannot open source input file "dashboard.h": No such file or directory
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(131): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(166): warning:  #223-D: function "dashboard" declared implicitly
+app.c(296): warning:  #188-D: enumerated type mixed with another type
+app.c(314): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(314): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(318): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(323): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(324): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(327): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(328): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(332): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(336): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(340): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(344): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(348): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(352): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(356): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(389): warning:  #188-D: enumerated type mixed with another type
+app.c(369): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(7): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(14): warning:  #177-D: function "AppTaskController" was declared but never referenced
+linking...
+Program Size: Code=29426 RO-data=4558 RW-data=1824 ZI-data=14512  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 28 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(131): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(166): warning:  #223-D: function "dashboard" declared implicitly
+app.c(303): warning:  #188-D: enumerated type mixed with another type
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(358): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(359): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(362): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(363): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(396): warning:  #188-D: enumerated type mixed with another type
+app.c(376): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(7): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(14): warning:  #177-D: function "AppTaskController" was declared but never referenced
+linking...
+Program Size: Code=29530 RO-data=4558 RW-data=1824 ZI-data=14512  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 28 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(131): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(166): warning:  #223-D: function "dashboard" declared implicitly
+app.c(303): warning:  #188-D: enumerated type mixed with another type
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(325): error:  #167: argument of type "int" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(358): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(359): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(362): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(363): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(396): warning:  #188-D: enumerated type mixed with another type
+app.c(376): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(7): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(14): warning:  #177-D: function "AppTaskController" was declared but never referenced
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(131): warning:  #177-D: variable "os_err" was declared but never referenced
+app.c(166): warning:  #223-D: function "dashboard" declared implicitly
+app.c(303): warning:  #188-D: enumerated type mixed with another type
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+app.c(321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+app.c(325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(338): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(347): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(358): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(359): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(362): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(363): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+app.c(396): warning:  #188-D: enumerated type mixed with another type
+app.c(376): warning:  #177-D: variable "tmp" was declared but never referenced
+app.c(7): warning:  #177-D: variable "AppTaskControllerStk" was declared but never referenced
+app.c(14): warning:  #177-D: function "AppTaskController" was declared but never referenced
+linking...
+Program Size: Code=29530 RO-data=4558 RW-data=1824 ZI-data=14512  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-ucgui.axf" - 0 Error(s), 28 Warning(s).

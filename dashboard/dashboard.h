@@ -8,3 +8,5 @@
 #define		NEXT_TRACK	24735
 #define		MUTE				8415
 #define		MODE				41055
+
+void sendAndroidControl(unsigned int control);

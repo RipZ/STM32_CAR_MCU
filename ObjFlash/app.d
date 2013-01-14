@@ -76,5 +76,6 @@
 ..\ObjFlash\app.o: ..\GUIinc\LCD.h
 ..\ObjFlash\app.o: ..\GUIinc\GUIVersion.h
 ..\ObjFlash\app.o: ..\GUIinc\GUI_X.h
+..\ObjFlash\app.o: ..\dashboard\dashboard.h
 ..\ObjFlash\app.o: ..\GUIinc\WM.h
 ..\ObjFlash\app.o: ..\GUIinc\WM_GUI.h

@@ -6,6 +6,12 @@
 void tp_Config(void) ;
 
 extern void I2C_FM_Init(void);
+
+extern void USART1_InitConfig(int BaudRate);
+extern void USART2_InitConfig(int BaudRate);
+extern void USART3_InitConfig(int BaudRate);
+extern void FSMC_LCD_Init(void);
+
 void SonyRM_InitConfig(void);
 
 void RCC_Configuration(void)
@@ -50,7 +56,6 @@ void UnableJTAG(void)
 void GPIO_Configuration(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
-	USART_InitTypeDef USART_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC |
 												 RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOE , ENABLE); 	

@@ -1,4 +1,5 @@
 #include "includes.h"
+#include "..\dashboard\dashboard.h"
 #include "..\GUIinc\WM.h"
 
 static	OS_STK App_TaskStartStk[APP_TASK_START_STK_SIZE];
@@ -201,33 +202,41 @@ void EXTI0_IRQHandler(void)
 			break;
 		case 4:
 			// key = ATT press
+			sendAndroidControl(MUTE);
 			break;
 		case 5:
 			// key = ATT release
 			break;
 		case 6:
 			// key = MODE press
+			sendAndroidControl(MODE);
 			break;
 		case 7:
 			// key = MODE release
 			break;
 		case 8:
 			// key = VOL+
+			sendAndroidControl(VOLUME_UP);
 			break;
 		case 9:
 			// key = VOL-
+			sendAndroidControl(VOLUME_DOWN);
 			break;
 		case 10:
 			// key = PREV
+			sendAndroidControl(PREV_TRACK);
 			break;
 		case 11:
 			// key = NEXT
+			sendAndroidControl(NEXT_TRACK);
 			break;
 		case 12:
 			// key = DISC+
+			sendAndroidControl(PRESET_UP);
 			break;
 		case 13:
 			// key = DISC-
+			sendAndroidControl(PRESET_DOWN);
 			break;
 		default:
 		break;

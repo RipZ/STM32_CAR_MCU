@@ -71,7 +71,7 @@
 ### ADS-LD Output File: '..\ObjFlash\STM32-FD-ucgui.axf'
 ### ADS-LD Command File: '..\ObjFlash\STM32-FD-ucgui.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\ObjFlash\STM32-FD-ucgui.lnp', Handle=0x00000390
+### Creating CmdFile '..\ObjFlash\STM32-FD-ucgui.lnp', Handle=0x0000020C
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\ObjFlash\STM32-FD-ucgui.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
