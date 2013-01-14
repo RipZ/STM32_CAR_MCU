@@ -1,38 +1,38 @@
 #include "includes.h"
 #include "..\GUIinc\WM.h"
 
-static  OS_STK App_TaskStartStk[APP_TASK_START_STK_SIZE];
-static  OS_STK AppTaskUserIFStk[APP_TASK_USER_IF_STK_SIZE];
-static  OS_STK AppTaskControllerStk[APP_TASK_CONTROLLER_STK_SIZE];
+static	OS_STK App_TaskStartStk[APP_TASK_START_STK_SIZE];
+static	OS_STK AppTaskUserIFStk[APP_TASK_USER_IF_STK_SIZE];
+static	OS_STK AppTaskControllerStk[APP_TASK_CONTROLLER_STK_SIZE];
 
-static  void App_TaskCreate(void);
+static	void App_TaskCreate(void);
 
-static  void App_TaskStart(void* p_arg);
-static  void  AppTaskUserIF (void *p_arg);
+static	void App_TaskStart(void* p_arg);
+static	void	AppTaskUserIF (void *p_arg);
 
-static  void AppTaskController(void* p_arg);
-//static  void App_TaskLCD(void* p_arg);
+static	void AppTaskController(void* p_arg);
+//static	void App_TaskLCD(void* p_arg);
 //
-//static  void App_TaskJoystick(void* p_arg);
-#define LED_LED1_ON()   GPIO_SetBits(GPIOC, GPIO_Pin_6 );  	   //LED1 
-#define LED_LED1_OFF()  GPIO_ResetBits(GPIOC, GPIO_Pin_6 ); 	 //LED1
-#define LED_LED2_ON()   GPIO_SetBits(GPIOC, GPIO_Pin_7 );  	   //LED2 
-#define LED_LED2_OFF()  GPIO_ResetBits(GPIOC, GPIO_Pin_7 ); 	 //LED2
-#define LED_LED3_ON()   GPIO_SetBits(GPIOD, GPIO_Pin_13 );  	 //LED3 
-#define LED_LED3_OFF()  GPIO_ResetBits(GPIOD, GPIO_Pin_13 ); 	 //LED3
-#define LED_LED4_ON()   GPIO_SetBits(GPIOD, GPIO_Pin_6 );  	   //LED4 
-#define LED_LED4_OFF()  GPIO_ResetBits(GPIOD, GPIO_Pin_6 ); 	 //LED4
+//static	void App_TaskJoystick(void* p_arg);
+#define LED_LED1_ON()	 GPIO_SetBits(GPIOC, GPIO_Pin_6 );			 //LED1 
+#define LED_LED1_OFF()	GPIO_ResetBits(GPIOC, GPIO_Pin_6 ); 	 //LED1
+#define LED_LED2_ON()	 GPIO_SetBits(GPIOC, GPIO_Pin_7 );			 //LED2 
+#define LED_LED2_OFF()	GPIO_ResetBits(GPIOC, GPIO_Pin_7 ); 	 //LED2
+#define LED_LED3_ON()	 GPIO_SetBits(GPIOD, GPIO_Pin_13 );		 //LED3 
+#define LED_LED3_OFF()	GPIO_ResetBits(GPIOD, GPIO_Pin_13 ); 	 //LED3
+#define LED_LED4_ON()	 GPIO_SetBits(GPIOD, GPIO_Pin_6 );			 //LED4 
+#define LED_LED4_OFF()	GPIO_ResetBits(GPIOD, GPIO_Pin_6 ); 	 //LED4
 
+// Android CarPC relative stuff
 unsigned char AndroidReceivedChar;
 unsigned char AndroidBuffer[8];
 unsigned char AndroidBufferIndex;
 bool Controller_key_event;
 bool GetAndroidCommand;
-bool mute, vol_up, vol_down, prev, next, play_mode, fm_search, fm_memory;
 
+// Car ECU relative stuff
 unsigned char ECU_data, ECU_param;
 bool ECU_req_param, ECU_complete;
-
 extern unsigned char parameter[8];
 extern unsigned char parameter_status[8];
 extern unsigned char parameter_value[8];
@@ -45,19 +45,19 @@ void SonyIR(void);
 bool SonyRead(void);
 void Delay_25us(void);
 unsigned int buttons[14][26] = {{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // PUSH release
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 226, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 166, 107, 285, 286}, // PUSH press
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 286, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 226, 285, 286}, // OFF press
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // OFF release
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 286, 106, 285, 286}, // ATT press
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // ATT release
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 166, 106, 166, 106, 166, 107, 226, 106, 106, 226, 107, 106, 106, 286, 285}, // MODE press
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // MODE release
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 106, 166, 107, 106, 166, 106, 226, 107, 106, 226, 106, 167, 166, 226, 226}, // VOL+
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 226, 106, 166, 107, 106, 166, 106, 226, 107, 106, 226, 106, 107, 166, 226, 226}, // VOL-
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 226, 166, 106, 106, 167, 106, 226, 106, 107, 226, 107, 106, 286, 226, 226}, // PREV
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 286, 166, 106, 107, 166, 106, 226, 107, 106, 226, 106, 286, 226, 226, 226}, // NEXT
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 106, 286, 107, 106, 166, 106, 226, 107, 106, 226, 106, 286, 166, 107, 226}, // DISC+
-															  {167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 106, 286, 107, 106, 166, 106, 226, 107, 106, 226, 106, 226, 166, 107, 226}}; // DISC-
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 226, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 166, 107, 285, 286}, // PUSH press
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 286, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 226, 285, 286}, // OFF press
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // OFF release
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 286, 106, 285, 286}, // ATT press
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // ATT release
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 166, 106, 166, 106, 166, 107, 226, 106, 106, 226, 107, 106, 106, 286, 285}, // MODE press
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 166, 106, 167, 106, 166, 106, 226, 107, 106, 226, 106, 226, 107, 285, 286}, // MODE release
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 106, 166, 107, 106, 166, 106, 226, 107, 106, 226, 106, 167, 166, 226, 226}, // VOL+
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 226, 106, 166, 107, 106, 166, 106, 226, 107, 106, 226, 106, 107, 166, 226, 226}, // VOL-
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 286, 226, 166, 106, 106, 167, 106, 226, 106, 107, 226, 107, 106, 286, 226, 226}, // PREV
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 286, 166, 106, 107, 166, 106, 226, 107, 106, 226, 106, 286, 226, 226, 226}, // NEXT
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 106, 106, 286, 107, 106, 166, 106, 226, 107, 106, 226, 106, 286, 166, 107, 226}, // DISC+
+																{167, 106, 106, 107, 166, 106, 286, 106, 106, 107, 166, 106, 286, 107, 106, 166, 106, 226, 107, 106, 226, 106, 226, 166, 107, 226}}; // DISC-
 
 // TEA5767 prototypes
 extern void SetPLL(unsigned long freq);
@@ -72,111 +72,98 @@ extern void setAudioRearLeftVolume(unsigned char rl_volume);
 extern void setAudioRearRightVolume(unsigned char rr_volume);
 extern void setAudioSource(unsigned char source);
 
-/*
-*********************************************************************************************************
-*                                                main()
-*
-* Description : This is the standard entry point for C code.  It is assumed that your code will call
-*               main() once you have performed all necessary initialization.
-*
-* Argument : none.
-*
-* Return   : none.
-*********************************************************************************************************
-*/
-
 int main(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
-   CPU_INT08U os_err;
-   //BSP_Init();      
-   //BSP_IntDisAll();                                            /* Disable all ints until we are ready to accept them.  */
-   CPU_IntDis();
-   
-   OSInit();                                                   /* Initialize "uC/OS-II, The Real-Time Kernel".         */
+	 CPU_INT08U os_err;
+	 //BSP_Init();			
+	 //BSP_IntDisAll();																						/* Disable all ints until we are ready to accept them.	*/
+	 CPU_IntDis();
+	 
+	 OSInit();																									 /* Initialize "uC/OS-II, The Real-Time Kernel".				 */
 
-   BSP_Init();                                                 /* Initialize BSP functions.  */
+	 BSP_Init();																								 /* Initialize BSP functions.	*/
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOC, &GPIO_InitStructure);
-  GPIOC->BSRR = 1<<0;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
+	GPIOC->BSRR = 1<<0;
 
-   os_err = OSTaskCreate((void (*) (void *)) App_TaskStart,
-               /* Create the start task.                               */
-                          (void *) 0,
-               (OS_STK *) &App_TaskStartStk[APP_TASK_START_STK_SIZE - 1],
-               (INT8U) APP_TASK_START_PRIO);
-   
+	 os_err = OSTaskCreate((void (*) (void *)) App_TaskStart,
+							 /* Create the start task.															 */
+													(void *) 0,
+							 (OS_STK *) &App_TaskStartStk[APP_TASK_START_STK_SIZE - 1],
+							 (INT8U) APP_TASK_START_PRIO);
+	 
 #if (OS_TASK_NAME_SIZE >= 11)
-   OSTaskNameSet(APP_TASK_START_PRIO, (CPU_INT08U *) "Start Task", &os_err);
+	 OSTaskNameSet(APP_TASK_START_PRIO, (CPU_INT08U *) "Start Task", &os_err);
 #endif
 
-//   InfoSem = OSSemCreate(0); 
-//   Disp_Box = OSMboxCreate((void *) 0);               
-   OSTimeSet(0);
-   OSStart();                                                  /* Start multitasking (i.e. give control to uC/OS-II).  */
+//	 InfoSem = OSSemCreate(0); 
+//	 Disp_Box = OSMboxCreate((void *) 0);							 
+	 OSTimeSet(0);
+	 OSStart();																									/* Start multitasking (i.e. give control to uC/OS-II).	*/
 
-   return (0);
+	 return (0);
 }
 
-static  void App_TaskStart(void* p_arg)
+static	void App_TaskStart(void* p_arg)
 {
-   (void) p_arg;
-   OS_CPU_SysTickInit();                                       /* Initialize the SysTick.       */
+	 (void) p_arg;
+	 OS_CPU_SysTickInit();																			 /* Initialize the SysTick.			 */
 #if (OS_TASK_STAT_EN > 0)
-   OSStatInit();                                               /* Determine CPU capacity.                              */
+	 OSStatInit();																							 /* Determine CPU capacity.															*/
 #endif
-   App_TaskCreate();
-   while (1)
-   {
-//      LED_LED1_ON();
-//      OSTimeDlyHMSM(0, 0, 0, 100);
-      
-//      LED_LED1_OFF();
-      OSTimeDlyHMSM(0, 0, 0, 1);
-   }
+	 App_TaskCreate();
+	 while (1)
+	 {
+//			LED_LED1_ON();
+//			OSTimeDlyHMSM(0, 0, 0, 100);
+			
+//			LED_LED1_OFF();
+			OSTimeDlyHMSM(0, 0, 0, 1);
+	 }
 }
 
-static  void App_TaskCreate(void)
+static	void App_TaskCreate(void)
 {
-   CPU_INT08U os_err;
-   
-   OSTaskCreateExt(AppTaskUserIF,(void *)0,(OS_STK *)&AppTaskUserIFStk[APP_TASK_USER_IF_STK_SIZE-1],APP_TASK_USER_IF_PRIO,APP_TASK_USER_IF_PRIO,(OS_STK *)&AppTaskUserIFStk[0],
-                    APP_TASK_USER_IF_STK_SIZE,
-                    (void *)0,
-                    OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR);
-                    
-//   OSTaskCreateExt(AppTaskController,(void *)0,(OS_STK *)&AppTaskControllerStk[APP_TASK_CONTROLLER_STK_SIZE-1],APP_TASK_CONTROLLER_PRIO,APP_TASK_CONTROLLER_PRIO,(OS_STK *)&AppTaskControllerStk[0],
-//                    APP_TASK_CONTROLLER_STK_SIZE,
-//                    (void *)0,
-//                    OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR);
+	 CPU_INT08U os_err;
+	 
+	 OSTaskCreateExt(AppTaskUserIF,(void *)0,(OS_STK *)&AppTaskUserIFStk[APP_TASK_USER_IF_STK_SIZE-1],APP_TASK_USER_IF_PRIO,APP_TASK_USER_IF_PRIO,(OS_STK *)&AppTaskUserIFStk[0],
+										APP_TASK_USER_IF_STK_SIZE,
+										(void *)0,
+										OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR);
+										
+//	 OSTaskCreateExt(AppTaskController,(void *)0,(OS_STK *)&AppTaskControllerStk[APP_TASK_CONTROLLER_STK_SIZE-1],APP_TASK_CONTROLLER_PRIO,APP_TASK_CONTROLLER_PRIO,(OS_STK *)&AppTaskControllerStk[0],
+//										APP_TASK_CONTROLLER_STK_SIZE,
+//										(void *)0,
+//										OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR);
 
 
-//   os_err = OSTaskCreate((void (*) (void *)) App_TaskLCD, (void *) 0,
-//               (OS_STK *) &App_TaskLCDStk[APP_TASK_LCD_STK_SIZE - 1],
-//               (INT8U) APP_TASK_LCD_PRIO);
-//   printf("Creat App_TaskLCD£¡\r\n");
+//	 os_err = OSTaskCreate((void (*) (void *)) App_TaskLCD, (void *) 0,
+//							 (OS_STK *) &App_TaskLCDStk[APP_TASK_LCD_STK_SIZE - 1],
+//							 (INT8U) APP_TASK_LCD_PRIO);
+//	 printf("Creat App_TaskLCD£¡\r\n");
 //#if (OS_TASK_NAME_SIZE >= 9)
-//   OSTaskNameSet(APP_TASK_LCD_PRIO, "LCD", &os_err);
+//	 OSTaskNameSet(APP_TASK_LCD_PRIO, "LCD", &os_err);
 //#endif
 
-//   os_err = OSTaskCreate((void (*) (void *)) App_TaskKbd, (void *) 0,
-//               (OS_STK *) &App_TaskKbdStk[APP_TASK_KBD_STK_SIZE - 1],
-//               (INT8U) APP_TASK_KBD_PRIO);
-//   printf("Creat App_TaskKbd£¡\r\n");
+//	 os_err = OSTaskCreate((void (*) (void *)) App_TaskKbd, (void *) 0,
+//							 (OS_STK *) &App_TaskKbdStk[APP_TASK_KBD_STK_SIZE - 1],
+//							 (INT8U) APP_TASK_KBD_PRIO);
+//	 printf("Creat App_TaskKbd£¡\r\n");
 }
 
 extern void LCD_L0_FillRect(int x0, int y0, int x1, int y1);
 
-static  void  AppTaskUserIF (void *p_arg)
+static	void	AppTaskUserIF (void *p_arg)
 {
  (void)p_arg;
-  GUI_Init();
-  while(1) 
-  {
+	GUI_Init();
+	while(1) 
+	{
 		dashboard();
-  }
+	}
 }
 
 void EXTI0_IRQHandler(void)
@@ -186,13 +173,13 @@ void EXTI0_IRQHandler(void)
 	for(i=0; i<13; i++)
 	{
 		k=1;
-    for(j=0; j<25; j++)
-    {
+		for(j=0; j<25; j++)
+		{
 			if((buttons[i][j] < period[j]-2) || (buttons[i][j] > period[j]+2)) // ïðîâåðêà âûõîäà çà óñòàíîâëåííûé ïðåäåë (+-2)
-      { // not equal
+			{ // not equal
 				k=0;
-        break;
-      }
+				break;
+			}
 		}
 		if(k) { key = i; break; }
 		else key = 255;
@@ -312,9 +299,9 @@ void USART1_IRQHandler(void) // Interrupt on char recieving from USART1 (Android
 	unsigned char param[16];
 	LED_LED1_ON();
 	if (USART_GetITStatus(USART1, USART_IT_RXNE) != (u16)RESET)
-        {
+				{
 					USART_ClearITPendingBit(USART1, USART_IT_RXNE);
-          AndroidReceivedChar = USART_ReceiveData(USART1);
+					AndroidReceivedChar = USART_ReceiveData(USART1);
 					AndroidBuffer[AndroidBufferIndex] = AndroidReceivedChar;
 					AndroidBufferIndex++;
 					if (AndroidReceivedChar == 19) // fucking programmer
@@ -380,7 +367,7 @@ void USART2_IRQHandler(void) // Interrupt on char recieving from USART2 (Car ECU
 	unsigned char tmp[64];
 	LED_LED2_ON();
 	if (USART_GetITStatus(USART2, USART_IT_RXNE) != (u16)RESET)
-  {
+	{
 		USART_ClearITPendingBit(USART2, USART_IT_RXNE);
 		// code here USART_ReceiveData(USART2);
 		data = USART_ReceiveData(USART2);
@@ -408,7 +395,7 @@ void USART3_IRQHandler(void) // Interrupt on char recieving from USART3 (GPS)
 {
 	LED_LED3_ON();
 	if (USART_GetITStatus(USART3, USART_IT_RXNE) != (u16)RESET)
-  {
+	{
 		USART_ClearITPendingBit(USART3, USART_IT_RXNE);
 	}
 	LED_LED3_OFF();
@@ -423,7 +410,7 @@ void App_TaskCreateHook(OS_TCB* ptcb)
 
 void App_TaskDelHook(OS_TCB* ptcb)
 {
-   (void) ptcb;
+	 (void) ptcb;
 }
 
 #if OS_VERSION >= 251
@@ -443,21 +430,21 @@ void App_TaskSwHook(void)
 #endif
 /*
 *********************************************************************************************************
-*                                     OS_TCBInit() HOOK (APPLICATION)
+*																		 OS_TCBInit() HOOK (APPLICATION)
 *
 * Description : This function is called by OSTCBInitHook(), which is called by OS_TCBInit() after setting
-*               up most of the TCB.
+*							 up most of the TCB.
 *
-* Argument : ptcb    is a pointer to the TCB of the task being created.
+* Argument : ptcb		is a pointer to the TCB of the task being created.
 *
-* Note     : (1) Interrupts may or may not be ENABLED during this call.
+* Note		 : (1) Interrupts may or may not be ENABLED during this call.
 *********************************************************************************************************
 */
 
 #if OS_VERSION >= 204
 void App_TCBInitHook(OS_TCB* ptcb)
 {
-   (void) ptcb;
+	 (void) ptcb;
 }
 #endif
 

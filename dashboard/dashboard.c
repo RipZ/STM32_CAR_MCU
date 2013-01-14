@@ -1,17 +1,16 @@
 #include "includes.h"
 #include "..\GUIinc\GUI.h"
 #include "..\GUIinc\WM.h" 
-#include "..\GUIinc\BUTTON.h"		  
+#include "..\GUIinc\BUTTON.h"			
 #include <string.h>		
 #include "dashboard.h"
 #include <stdio.h>
 
 #define true TRUE;
 #define false FALSE;
-//#define SonyRead      GPIOA->IDR  & GPIO_Pin_1
-//#define SonyRead()	GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_0)
-#define LED4_ON()   GPIO_SetBits(GPIOD, GPIO_Pin_6 );  	   //LED4 
-#define LED4_OFF()  GPIO_ResetBits(GPIOD, GPIO_Pin_6 ); 	 //LED4
+
+#define LED4_ON()	 GPIO_SetBits(GPIOD, GPIO_Pin_6 );			 //LED4 
+#define LED4_OFF()	GPIO_ResetBits(GPIOD, GPIO_Pin_6 ); 	 //LED4
 
 extern unsigned char AndroidReceivedChar;
 extern bool Controller_key_event, mute, vol_up, vol_down, prev, next, play_mode, fm_search, fm_memory;
@@ -41,25 +40,25 @@ void BT_power_on(void);
 
 int AndroidPutChar(int ch)
 {
-  USART_SendData(USART1, (unsigned char) ch);
-  while (!(USART1->SR & USART_FLAG_TXE));
-  return (ch);
+	USART_SendData(USART1, (unsigned char) ch);
+	while (!(USART1->SR & USART_FLAG_TXE));
+	return (ch);
 }
 
 void AndroidPutString(u8 *s)
 {
-  while (*s != '\0')
-  {
-    AndroidPutChar(*s);
-    s ++;
-  }
+	while (*s != '\0')
+	{
+		AndroidPutChar(*s);
+		s ++;
+	}
 }
 
 void ECU_Send(unsigned char ch)
 {
 	unsigned char tmp[64];
 	USART_SendData(USART2, ch);
-  while (!(USART2->SR & USART_FLAG_TXE));
+	while (!(USART2->SR & USART_FLAG_TXE));
 //	sprintf(tmp,"0x%x >> ECU\n\r",ch);
 //	PutString(tmp);
 }
@@ -85,28 +84,7 @@ void dashboard(void)
 
 	while (1) 
 	{
-//		GUI_DispStringAt("PIN=0",10,10);
-//		while(SonyRead) GUI_DispStringAt("PIN=1",10,10);
-//		SonyIR();
-//		GUI_Clear();
-/*
-		for (impulse=1; impulse<27; impulse++)
-		{
-			sprintf(str, "Impulse %d: %d\n", impulse, period[impulse]);
-			GUI_DispStringAt(str,10,impulse*10);
-		}
-*/
 	}
-	
-	/*
-	if (play_mode) // FM Radio
-	{
-		GUI_SetColor(GUI_GREEN);
-		GUI_SetFont(&GUI_Font32B_ASCII);
-		GUI_DispStringAt("FM  ", 1, 182);
-		FM_display(); 
-	}
-*/
 }
 
 bool ECU_Request_param(void)
@@ -189,4 +167,3 @@ void BT_power_on(void)
 	GUI_Delay(4000);
 	GPIO_ResetBits(GPIOA, GPIO_Pin_1 );
 }
-
