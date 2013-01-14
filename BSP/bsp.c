@@ -18,6 +18,7 @@
 void tp_Config(void) ;
 
 extern void I2C_FM_Init(void);
+void SonyRM_InitConfig(void);
 
 void RCC_Configuration(void)
 {ErrorStatus HSEStartUpStatus;   
@@ -69,11 +70,8 @@ void RCC_Configuration(void)
   }
 
   /* Enable GPIO_LED clock */
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO, ENABLE);
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE); //RipZ
-
-  //RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
-  //RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
 }
 
 //№Ш±ХµчКФЅУїЪЈ¬ЧчGPIOК№УГ
@@ -112,8 +110,27 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 ; 	 //LCD-RST
   GPIO_Init(GPIOE, &GPIO_InitStructure);  	
   
-  	
-  
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0; // SONY RM-X6S INPUT
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD; // IPU
+  GPIO_Init(GPIOE, &GPIO_InitStructure);  	
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3; // SONY RM-X6S mirror test output
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_Init(GPIOC, &GPIO_InitStructure);  	
+	
+	// Initialization Bluetooth	
+//  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_11 | GPIO_Pin_12;
+//  GPIO_Init(GPIOA, &GPIO_InitStructure); // TODO: ???  	
+
+//	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
+//  GPIO_Init(GPIOC, &GPIO_InitStructure); // TODO: ??? 	
+
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1; // BT_POWER_KEY
+  GPIO_Init(GPIOA, &GPIO_InitStructure);  	
+
+// LCD interface
+
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_4 | GPIO_Pin_5 |
                                 GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_14 | 
                                 GPIO_Pin_15;
@@ -121,8 +138,6 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
   GPIO_Init(GPIOD, &GPIO_InitStructure);
 
-  /* Set PE.07(D4), PE.08(D5), PE.09(D6), PE.10(D7), PE.11(D8), PE.12(D9), PE.13(D10),
-     PE.14(D11), PE.15(D12) as alternate function push pull */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | 
                                 GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | 
                                 GPIO_Pin_15;
@@ -146,11 +161,9 @@ void GPIO_Configuration(void)
 
   //usart1_gpio_init----------------------------------------------------
   RCC_APB2PeriphClockCmd( RCC_APB2Periph_USART1 , ENABLE);
-	/* Configure USART1 Rx (PA.10) as input floating */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
   GPIO_Init(GPIOA, &GPIO_InitStructure);
-  /* Configure USART1 Tx (PA.09) as alternate function push-pull */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
@@ -158,11 +171,9 @@ void GPIO_Configuration(void)
   
 	//usart2_gpio_init----------------------------------------------------
   RCC_APB1PeriphClockCmd( RCC_APB1Periph_USART2 , ENABLE);
-	/* Configure USART2 Rx (PA.3) as input floating */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
   GPIO_Init(GPIOA, &GPIO_InitStructure);
-  /* Configure USART2 Tx (PA.2) as alternate function push-pull */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
@@ -170,17 +181,19 @@ void GPIO_Configuration(void)
 
 	//usart3_gpio_init----------------------------------------------------
   RCC_APB1PeriphClockCmd( RCC_APB1Periph_USART3 , ENABLE);
-	/* Configure USART3 Rx (PB.11) as input floating */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
   GPIO_Init(GPIOB, &GPIO_InitStructure);
-  /* Configure USART3 Tx (PB.10) as alternate function push-pull */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
   GPIO_Init(GPIOB, &GPIO_InitStructure);
-
-//  GPIO_ResetBits(GPIOD, GPIO_Pin_13);			//LIGHT
+	
+	// I2C bus initialization (SCL - PB.8, SDA - PB.9)
+  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_8 | GPIO_Pin_9;		    
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;                                               
+  GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
 
 /*******************************************************************************
@@ -270,19 +283,43 @@ void BSP_Init(void)
   RCC1_Configuration();   
 
   GPIO_Configuration();
-  I2C_FM_Init(); 	    		   //I2C
   
   /* NVIC configuration */
   NVIC_Configuration();
   
-  USART1_InitConfig(115200); // Keyboard controller
+  USART1_InitConfig(9600); // Keyboard controller
   USART2_InitConfig(1904);   // Car ECU connection 1904
-  USART3_InitConfig(4800);   // GPS reciever connection
+  USART3_InitConfig(4800);   // GPS reciever connection 4800 - gps !!!111
 
+	SonyRM_InitConfig();
+	
 	tp_Config();
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_FSMC, ENABLE);
  
   FSMC_LCD_Init();
+}
+
+void SonyRM_InitConfig(void)
+{
+	EXTI_InitTypeDef EXTI_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOE, GPIO_PinSource0); //говорим что вывод PE0 используется как внешний вывод прерывания
+//	GPIO_EventOutputConfig(GPIO_PortSourceGPIOE, GPIO_PinSource0); //неуверен что это нужно ???
+	EXTI_InitStructure.EXTI_Line = EXTI_Line0; //используем линию 0 (она для портов PA0 - PG0)
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt; //режим хардварного прерывания
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising; //прерывание по нарастанию импульса
+	EXTI_InitStructure.EXTI_LineCmd = ENABLE; //??? это я вообще непонял зачем нужно ???
+	EXTI_Init(&EXTI_InitStructure); //передаем настройку в функцию инициализации
+
+  NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+
+  NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
 }
 
 CPU_INT32U  BSP_CPU_ClkFreq (void)

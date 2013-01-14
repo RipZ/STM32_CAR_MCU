@@ -88,16 +88,3 @@
 ..\ObjFlash\dashboard.o: ..\dashboard\..\GUIinc\SCROLLBAR.h
 ..\ObjFlash\dashboard.o: ..\dashboard\..\GUIinc\WIDGET.h
 ..\ObjFlash\dashboard.o: ..\dashboard\dashboard.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\mp3player.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\vs1003.h
-..\ObjFlash\dashboard.o: ..\APP\stm32f10x.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\sdcard.h
-..\ObjFlash\dashboard.o: ..\APP\stm32f10x.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\ff.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\integer.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\diskio.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\timestamp.h
-..\ObjFlash\dashboard.o: ..\dashboard\..\mp3player\..\FatFs\rtc.h
-..\ObjFlash\dashboard.o: ..\APP\stm32f10x.h
-..\ObjFlash\dashboard.o: e:\Keil\ARM\RV31\Inc\stdbool.h
-..\ObjFlash\dashboard.o: ..\APP\stm32f10x.h

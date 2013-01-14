@@ -746,51 +746,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tea5767</GroupName>
-          <Files>
-            <File>
-              <FileName>fm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FMradio\fm.c</FilePath>
-            </File>
-            <File>
-              <FileName>Tea5756.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FMradio\Tea5756.c</FilePath>
-            </File>
-            <File>
-              <FileName>fm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\FMradio\fm.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MP3player</GroupName>
-          <Files>
-            <File>
-              <FileName>mp3player.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\mp3player.c</FilePath>
-            </File>
-            <File>
-              <FileName>mp3player.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\mp3player.h</FilePath>
-            </File>
-            <File>
-              <FileName>vs1003.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\vs1003.c</FilePath>
-            </File>
-            <File>
-              <FileName>vs1003.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\vs1003.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>dashboard</GroupName>
           <Files>
             <File>
@@ -806,47 +761,32 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FatFS</GroupName>
+          <GroupName>i2c bus</GroupName>
           <Files>
             <File>
-              <FileName>diskio.c</FileName>
+              <FileName>i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\diskio.c</FilePath>
+              <FilePath>..\i2c\i2c.c</FilePath>
             </File>
             <File>
-              <FileName>ff.c</FileName>
+              <FileName>tda7318.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\ff.c</FilePath>
+              <FilePath>..\i2c\tda7318.c</FilePath>
             </File>
             <File>
-              <FileName>sdcard.c</FileName>
+              <FileName>tea5767.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\sdcard.c</FilePath>
+              <FilePath>..\i2c\tea5767.c</FilePath>
             </File>
             <File>
-              <FileName>timestamp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FatFs\timestamp.c</FilePath>
-            </File>
-            <File>
-              <FileName>timestamp.h</FileName>
+              <FileName>tda7318.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\FatFs\timestamp.h</FilePath>
+              <FilePath>..\i2c\tda7318.h</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>RTC</GroupName>
-          <Files>
             <File>
-              <FileName>rtc.h</FileName>
+              <FileName>tea5767.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\FatFs\rtc.h</FilePath>
-            </File>
-            <File>
-              <FileName>rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FatFs\rtc.c</FilePath>
+              <FilePath>..\i2c\tea5767.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1592,51 +1532,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tea5767</GroupName>
-          <Files>
-            <File>
-              <FileName>fm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FMradio\fm.c</FilePath>
-            </File>
-            <File>
-              <FileName>Tea5756.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FMradio\Tea5756.c</FilePath>
-            </File>
-            <File>
-              <FileName>fm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\FMradio\fm.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MP3player</GroupName>
-          <Files>
-            <File>
-              <FileName>mp3player.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\mp3player.c</FilePath>
-            </File>
-            <File>
-              <FileName>mp3player.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\mp3player.h</FilePath>
-            </File>
-            <File>
-              <FileName>vs1003.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\mp3player\vs1003.c</FilePath>
-            </File>
-            <File>
-              <FileName>vs1003.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\mp3player\vs1003.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>dashboard</GroupName>
           <Files>
             <File>
@@ -1652,47 +1547,32 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FatFS</GroupName>
+          <GroupName>i2c bus</GroupName>
           <Files>
             <File>
-              <FileName>diskio.c</FileName>
+              <FileName>i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\diskio.c</FilePath>
+              <FilePath>..\i2c\i2c.c</FilePath>
             </File>
             <File>
-              <FileName>ff.c</FileName>
+              <FileName>tda7318.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\ff.c</FilePath>
+              <FilePath>..\i2c\tda7318.c</FilePath>
             </File>
             <File>
-              <FileName>sdcard.c</FileName>
+              <FileName>tea5767.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FatFs\sdcard.c</FilePath>
+              <FilePath>..\i2c\tea5767.c</FilePath>
             </File>
             <File>
-              <FileName>timestamp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FatFs\timestamp.c</FilePath>
-            </File>
-            <File>
-              <FileName>timestamp.h</FileName>
+              <FileName>tda7318.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\FatFs\timestamp.h</FilePath>
+              <FilePath>..\i2c\tda7318.h</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>RTC</GroupName>
-          <Files>
             <File>
-              <FileName>rtc.h</FileName>
+              <FileName>tea5767.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\FatFs\rtc.h</FilePath>
-            </File>
-            <File>
-              <FileName>rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FatFs\rtc.c</FilePath>
+              <FilePath>..\i2c\tea5767.h</FilePath>
             </File>
           </Files>
         </Group>

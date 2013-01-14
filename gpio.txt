@@ -1,0 +1,32 @@
+TEA5767:
+--------------
+PB.8 - SCL
+PB.9 - SDA
+
+CONTROLLER:
+---------------
+PA.10 - RX
+PA.9 - TX
+
+CAR MCU:
+----------------
+PA.3 - Rx
+PA.2 - Tx
+
+GPS:
+----------------
+PB.11 - Rx
+PB.10 - Tx
+
+BT:
+-----------------
+PA.11 - volume DOWN
+PA.12 - volume UP
+PA.8 - SELECT
+PA.1 - BT_POWER_KEY
+PC.2 - LEFT
+PC.3 - RIGHT
+
+SONY RM-X6S:
+------------------
+PE.0 - INPUT

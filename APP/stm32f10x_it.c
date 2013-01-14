@@ -233,9 +233,9 @@ void RCC_IRQHandler(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void EXTI0_IRQHandler(void)
-{
-}
+//void EXTI0_IRQHandler(void)
+//{
+//}
 
 /*******************************************************************************
 * Function Name  : EXTI1_IRQHandler
